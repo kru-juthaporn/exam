@@ -120,11 +120,11 @@ async function handleVerifyEmail() {
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(emailInput)) {
-        return alert("❌ รูปแบบ Email ไม่ถูกต้อง! กรุณาตรวจสอบอีกครั้ง (เช่น 28228@blm.ac.th)");
+        return alert("❌ รูปแบบ Email ไม่ถูกต้อง! กรุณาตรวจสอบอีกครั้ง (เช่น 28228@cba.ac.th)");
     }
 
-    if (!emailInput.endsWith("@blm.ac.th")) {
-        return alert("❌ ระบบอนุญาตให้ใช้เฉพาะ Email ของสถาบัน (@blm.ac.th) เท่านั้น!");
+    if (!emailInput.endsWith("@cba.ac.th")) {
+        return alert("❌ ระบบอนุญาตให้ใช้เฉพาะ Email ของสถาบัน (@cba.ac.th) เท่านั้น!");
     }
 
     currentEmail = emailInput;
